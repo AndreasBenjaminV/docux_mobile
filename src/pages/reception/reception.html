@@ -1,0 +1,93 @@
+<!--
+  Generated template for the ReceptionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Oficina de partes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="sidemenu_ion_content" padding>
+  <ion-item class="yellow_line">
+    <h1>Recepcion</h1>
+    <br>
+    <span>Impresion de Etiquetas para la Recepción Masiva de Documentos:</span>
+  </ion-item>
+  <br>
+  <br>
+
+  <ion-item>
+    <ion-row>
+      <ion-col col-6>
+        <h3>Numero de etiquetas: &nbsp;&nbsp;</h3>
+      </ion-col>
+      <ion-col col-6>
+        <ion-row>
+          <input type="number" style="float: right;">
+        </ion-row>
+        <ion-row>
+          <br>
+          <br>
+          <button ion-button>
+            Nuevo ingreso
+            <br>generar etiqueta </button>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-row>
+      <h3>ID Seguimiento:</h3>
+    </ion-row>
+    <ion-row>
+      <h3>Fecha:</h3>
+    </ion-row>
+    <ion-row>
+      <h3>Hora:</h3>
+    </ion-row>
+  </ion-item>
+  <br>
+  <h3>Documentos por cargar</h3>
+  <br>
+  <ion-item class="blue">
+    <ion-grid>
+      <ion-row>
+
+      <ion-col col-xs-2>
+        <h3 align="center">ID de Seguimiento </h3>
+      </ion-col>
+      <ion-col col-xs-5>
+          <h3 >Fecha</h3>
+      </ion-col>
+      <ion-col col-xs-5>
+          <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usuario</h3>
+      </ion-col>
+
+    </ion-row>
+    </ion-grid>
+  </ion-item>
+
+  <ion-item *ngFor="let hero of heroes">
+    <ion-row>
+    <ion-col col-2>
+      <h3 align="center">{{hero.id}}</h3>
+    </ion-col >
+
+    <ion-col col-5 >
+        <h3 align="center">{{hero.date}}</h3>
+    </ion-col>
+
+    <ion-col col-5>
+        <h3 align="center">{{hero.autor}}</h3>
+    </ion-col>
+  </ion-row>
+  </ion-item>
+</ion-content>
