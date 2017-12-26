@@ -11,6 +11,8 @@ import { DocumentFinderPage } from '../pages/document-finder/document-finder';
 import { TransferTaskPage } from '../pages/transfer-task/transfer-task';
 import { NewEntryPage } from '../pages/new-entry/new-entry';
 import { ReceptionPage } from '../pages/reception/reception';
+import { LoginPage } from '../pages/login/login';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ReceptionPage } from '../pages/reception/reception';
     DocumentFinderPage,
     TransferTaskPage,
     NewEntryPage,
-    ReceptionPage
+    ReceptionPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { ReceptionPage } from '../pages/reception/reception';
     DocumentFinderPage,
     TransferTaskPage,
     NewEntryPage,
-    ReceptionPage
+    ReceptionPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
