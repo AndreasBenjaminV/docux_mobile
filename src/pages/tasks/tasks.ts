@@ -6,10 +6,7 @@ By Andreas Valero
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-<<<<<<< HEAD
 import { TransferTaskPage } from '../transfer-task/transfer-task';
-=======
->>>>>>> 83dcbbfccec33a52a3289d71844542f61a65d8c3
 
 @IonicPage()
 @Component({
@@ -40,13 +37,10 @@ export class TasksPage {
     console.log(this.name)
   }
 
-<<<<<<< HEAD
   transfer_task(){
     this.navCtrl.push(TransferTaskPage);
   }
 
-=======
->>>>>>> 83dcbbfccec33a52a3289d71844542f61a65d8c3
   back_to_home(){
     this.navCtrl.push(HomePage);
   }
