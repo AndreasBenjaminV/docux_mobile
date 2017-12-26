@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TasksPage } from '../pages/tasks/tasks';
 import { DocumentFinderPage } from '../pages/document-finder/document-finder';
+import { ExpedientFinderPage } from '../pages/Expedient-finder/Expedient-finder';
 import { TransferTaskPage } from '../pages/transfer-task/transfer-task';
 import { NewEntryPage } from '../pages/new-entry/new-entry';
 import { ReceptionPage } from '../pages/reception/reception';
@@ -23,7 +24,8 @@ import { LoginPage } from '../pages/login/login';
     TransferTaskPage,
     NewEntryPage,
     ReceptionPage,
-    LoginPage
+    LoginPage,
+    ExpedientFinderPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { LoginPage } from '../pages/login/login';
     TransferTaskPage,
     NewEntryPage,
     ReceptionPage,
-    LoginPage
+    LoginPage,
+    ExpedientFinderPage
   ],
   providers: [
     StatusBar,

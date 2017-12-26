@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { TasksPage } from '../pages/tasks/tasks';
 import { DocumentFinderPage } from '../pages/document-finder/document-finder';
+import { ExpedientFinderPage } from '../pages/Expedient-finder/Expedient-finder';
 import { NewEntryPage } from '../pages/new-entry/new-entry';
 import { ReceptionPage } from '../pages/reception/reception';
 import { LoginPage } from '../pages/login/login';
@@ -28,7 +29,7 @@ export class MyApp {
           { title: 'Recepcion', component: ReceptionPage },
           { title: 'Nuevo Ingreso', component: NewEntryPage },
           { title: 'Reportes', component: HomePage },
-          { title: 'Buscador de expedientes', component: HomePage },
+          { title: 'Buscador de expedientes', component: ExpedientFinderPage },
           { title: 'Buscador de documentos', component: DocumentFinderPage }
         ];
 
