@@ -4,6 +4,9 @@ By Andreas Valero
 -->
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>{{name}}</ion-title>
   </ion-navbar>
 </ion-header>
@@ -20,9 +23,9 @@ By Andreas Valero
 -->
 
 <ion-content class="ion_background_view" padding>
-<ion-item class="yellow_line">
-  <ul>Detalle de tarea: {{name}}</ul>
-</ion-item>
+  <ion-item class="yellow_line">
+    <ul>Detalle de tarea: {{name}}</ul>
+  </ion-item>
 
   <ion-item>
     <ion-row>
@@ -85,9 +88,9 @@ By Andreas Valero
 
   <br>
   <ion-row>
-      <ion-col col-12>
-          <button ion-button (click)="transfer_task()"  style="float: right;" >Despachar</button>
-          <button ion-button (click)="back_to_home()" color="secondary" style="float: right;">Volver</button>
-      </ion-col>
+    <ion-col col-12>
+      <button ion-button (click)="transfer_task()" style="float: right;">Despachar</button>
+      <button ion-button (click)="back_to_home()" color="secondary" style="float: right;">Volver</button>
+    </ion-col>
   </ion-row>
 </ion-content>

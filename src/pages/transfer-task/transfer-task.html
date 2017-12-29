@@ -6,6 +6,9 @@
 -->
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Oficina de partes</ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,84 +16,93 @@
 
 <ion-content class="ion_background_view" padding>
 
-    <ion-item class="yellow_line">  
-        <h1>Tarea</h1><br>
-        <span>ID de seguimiento:</span>
-        <br><span>fecha de la Tarea:</span>
-      </ion-item><br>
+  <ion-item class="yellow_line">
+    <h1>Tarea</h1>
+    <br>
+    <span>ID de seguimiento:</span>
+    <br>
+    <span>fecha de la Tarea:</span>
+  </ion-item>
+  <br>
 
   <ion-item>
     <ion-grid>
-          <ion-row>
+      <ion-row>
 
-            <ion-col col-6>
-              <ion-row><input type="checkbox"><h2>&nbsp;&nbsp;Despachar</h2></ion-row>
-          </ion-col>
+        <ion-col col-6>
+          <ion-row>
+            <input type="checkbox">
+            <h2>&nbsp;&nbsp;Despachar</h2>
+          </ion-row>
+        </ion-col>
 
-          <ion-col col-6>
-            <select class="form-control" id="sel" required name="distribucion1" style="float: right;">
-                <option disabled selected>Seleccionar</option>
-                <option value="opcion1">Usuario 1</option>
-             <option value="opcion2">Usuario 2</option>
-             <option value="opcion2">Usuario 3</option>
-             </select>
-            </ion-col>
-          </ion-row>
+        <ion-col col-6>
+          <select class="form-control" id="sel" required name="distribucion1" style="float: right;">
+            <option disabled selected>Seleccionar</option>
+            <option value="opcion1">Usuario 1</option>
+            <option value="opcion2">Usuario 2</option>
+            <option value="opcion2">Usuario 3</option>
+          </select>
+        </ion-col>
+      </ion-row>
 
-          <ion-row>
-            <input type="radio">
-            <h4>&nbsp;&nbsp;Grupo</h4>
-          </ion-row>
-          <ion-row>
-            <input type="radio">
-            <h4>&nbsp;&nbsp;Persona</h4>
-          </ion-row>
-          <ion-row>
-            <input type="radio">
-            <h4>&nbsp;&nbsp;Lista de distribución</h4>
-          </ion-row>
+      <ion-row>
+        <input type="radio">
+        <h4>&nbsp;&nbsp;Grupo</h4>
+      </ion-row>
+      <ion-row>
+        <input type="radio">
+        <h4>&nbsp;&nbsp;Persona</h4>
+      </ion-row>
+      <ion-row>
+        <input type="radio">
+        <h4>&nbsp;&nbsp;Lista de distribución</h4>
+      </ion-row>
 
     </ion-grid>
   </ion-item>
   <br>
   <br>
   <ion-item>
-      
-          <ion-grid>
-                <ion-row>
-      
-                  <ion-col col-6>
-                    <ion-row><input type="checkbox"><h2>&nbsp;&nbsp;Con copia</h2></ion-row>
-                </ion-col>
-      
-                <ion-col col-6>
-                  <select class="form-control" id="sel" required name="distribucion1" style="float: right;">
-                      <option disabled selected>Seleccionar</option>
-                      <option value="opcion1">Usuario 1</option>
-                   <option value="opcion2">Usuario 2</option>
-                   <option value="opcion2">Usuario 3</option>
-                   </select>
-                  </ion-col>
-                </ion-row>
-      
-                <ion-row>
-                  <input type="radio">
-                  <h4>&nbsp;&nbsp; Grupo</h4>
-                </ion-row>
-                <ion-row>
-                  <input type="radio">
-                  <h4> &nbsp;&nbsp; Persona</h4>
-                </ion-row>
-                <ion-row>
-                  <input type="radio">
-                  <h4> &nbsp;&nbsp; Lista de distribución</h4>
-                </ion-row>
-      
-          </ion-grid>
-        </ion-item>
-        <br>
 
-        <button ion-button color="danger">Eliminar</button>
-        <button ion-button color="secondary">Cerrar Tarea </button>
-        <button ion-button>Enviar</button>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col col-6>
+          <ion-row>
+            <input type="checkbox">
+            <h2>&nbsp;&nbsp;Con copia</h2>
+          </ion-row>
+        </ion-col>
+
+        <ion-col col-6>
+          <select class="form-control" id="sel" required name="distribucion1" style="float: right;">
+            <option disabled selected>Seleccionar</option>
+            <option value="opcion1">Usuario 1</option>
+            <option value="opcion2">Usuario 2</option>
+            <option value="opcion2">Usuario 3</option>
+          </select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <input type="radio">
+        <h4>&nbsp;&nbsp; Grupo</h4>
+      </ion-row>
+      <ion-row>
+        <input type="radio">
+        <h4> &nbsp;&nbsp; Persona</h4>
+      </ion-row>
+      <ion-row>
+        <input type="radio">
+        <h4> &nbsp;&nbsp; Lista de distribución</h4>
+      </ion-row>
+
+    </ion-grid>
+  </ion-item>
+  <br>
+
+  <button ion-button color="danger">Eliminar</button>
+  <button ion-button color="secondary">Cerrar Tarea </button>
+  <button ion-button>Enviar</button>
 </ion-content>
